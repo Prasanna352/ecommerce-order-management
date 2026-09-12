@@ -1,0 +1,633 @@
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+}
+
+.auth-box {
+    width: 380px;
+    padding: 35px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.auth-box h1,
+.auth-box h2 {
+    text-align: center;
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.auth-box input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.auth-box button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.secondary-button {
+    width: 100%;
+    background: #666 !important;
+}
+
+.products-page {
+    padding: 30px;
+}
+
+.products-page > h1 {
+    text-align: center;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(250px, 1fr)
+    );
+    gap: 25px;
+}
+
+.product-card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.product-card h2 {
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #555;
+}
+
+.product-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background: #444;
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cart-button {
+    width: auto !important;
+    padding: 10px 20px !important;
+}
+
+.cart-page {
+    padding: 30px;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cart-header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.cart-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.cart-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.quantity-controls button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.quantity-controls span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.remove-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #777;
+    color: white;
+    cursor: pointer;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 60px;
+}
+.cart-summary {
+    margin-top: 30px;
+    padding: 25px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.checkout-button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background: #444;
+}
+.orders-page {
+    padding: 30px;
+}
+
+.orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.orders-header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.orders-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.order-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-header h2 {
+    margin: 0 0 8px 0;
+}
+
+.order-header strong {
+    font-size: 20px;
+}
+
+.order-items {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.empty-orders {
+    text-align: center;
+    padding: 60px;
+}
+.admin-page {
+    padding: 30px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.admin-header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.admin-form-container {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    padding: 25px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.admin-product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admin-product-form input,
+.admin-product-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.admin-product-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.admin-product-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.admin-products {
+    margin-top: 30px;
+}
+
+.delete-button {
+    background: #555 !important;
+}
+
+.delete-button:hover {
+    background: #333 !important;
+}
+.admin-orders-page {
+    padding: 30px;
+}
+
+.admin-orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.admin-orders-header div {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-orders-header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.admin-orders-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.admin-order-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.admin-order-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.admin-order-top h2 {
+    margin-top: 0;
+}
+
+.admin-order-total strong {
+    font-size: 22px;
+}
+
+.admin-order-items {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.admin-order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.order-status-section {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.order-status-section label {
+    font-weight: bold;
+}
+
+.order-status-section select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.admin-header > div {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-header > div button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background: #777 !important;
+}
+
+.cancel-button:hover {
+    background: #555 !important;
+}
+.admin-dashboard {
+    padding: 30px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.dashboard-cards {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.dashboard-card h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.dashboard-card p {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.dashboard-actions {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.action-buttons button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+
+    .dashboard-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-links button {
+    padding: 9px 14px;
+    border: none;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar-links button:hover {
+    background: #444;
+}
+
+.navbar-user {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.logout-button {
+    background: #777 !important;
+}
+
+.logout-button:hover {
+    background: #555 !important;
+}
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.page-title {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.page-title h1 {
+    margin-bottom: 8px;
+}
+
+.page-title p {
+    color: #666;
+    margin: 0;
+}
+.product-card {
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
